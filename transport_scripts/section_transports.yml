@@ -1,0 +1,65 @@
+# Section transport definitions
+#
+# Each section is defined by two endpoints (lon1, lon2, lat1, lat2).
+# The script determines the transport component automatically:
+#   - lon1 == lon2  ->  umo  (fixed longitude, meridional section)
+#   - lat1 == lat2  ->  vmo  (fixed latitude,  zonal section)
+#
+# Coordinates are in degrees (negative = West / South).
+
+sections:
+  Drake_Passage:
+    lon1: -67.0
+    lon2: -67.0
+    lat1: -67.2
+    lat2: -55.1
+
+  # ---- examples of additional sections (uncomment to activate) ----
+
+  Bering_Strait:
+    lon1: -174.5
+    lon2: -172.3
+    lat1:   66.6
+    lat2:   66.6
+
+  Florida_Bahamas:
+    lon1: -80.26
+    lon2: -78.24
+    lat1:  25.5
+    lat2:  25.5
+
+  Florida_Cuba:
+    lon1: -80.75
+    lon2: -80.75
+    lat1: 23.0
+    lat2: 25.5
+
+  Indonesian_Throughflow:
+    lon1: -246.5
+    lon2: -220.8
+    lat1: -7.0
+    lat2: -7.0
+
+  Agulhas_Leakage:
+    lon1: 20.1
+    lon2: 20.1
+    lat1: -45.0
+    lat2: -34.6
+
+  Mozambique_Channel:
+    lon1: 39.9
+    lon2: 44.7
+    lat1: -16.25
+    lat2: -16.25
+
+  Windward_Passage:
+    lon1: -74.35
+    lon2: -73.0
+    lat1: 19.92
+    lat2: 19.92
+
+  Yucatan_Channel:
+    lon1: -87.0
+    lon2: -85.0
+    lat1: 21.785
+    lat2: 21.785
